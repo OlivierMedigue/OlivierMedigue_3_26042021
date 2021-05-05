@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Découvrez des restaurants d'exception sélectionnés par nos soins",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlivierMedigue/OlivierMedigue_3_26042021.git"
+  },
+  "author": "Olivier Médigue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlivierMedigue/OlivierMedigue_3_26042021/issues"
+  },
+  "homepage": "https://github.com/OlivierMedigue/OlivierMedigue_3_26042021#readme"
+}
