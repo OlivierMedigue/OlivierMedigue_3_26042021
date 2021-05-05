@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: grey;
+    color: white;
+    margin: 0;
+}
+.icon{
+    width: 30px;
+}   
+.propose-restaurant{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+.become-partner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
