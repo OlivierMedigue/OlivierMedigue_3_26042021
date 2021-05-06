@@ -2,7 +2,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 1em;
-    background-color: grey;
+    background-color: #353535;
     color: white;
     margin: 0;
 }
@@ -15,7 +15,7 @@ footer{
     align-items: center;
 }
 .become-partner{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
 }
