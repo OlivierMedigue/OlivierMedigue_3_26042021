@@ -1,3 +1,5 @@
+/*index*/
+
 @mixin instruction {
     width: 295px;
     border-radius: 1em;
@@ -5,21 +7,23 @@
     box-shadow: 3px 3px 10px grey;
 }
 
-/*box-restaurant*/
+/*index-box-restaurant*/
 @mixin box-restaurant {
     width: 100%;
+    max-width: 600px;
     height: 22%;
     border-radius: 1em;
     box-shadow :6px 6px 10px #d9d9d9;
     background-color: white;
 }
 
+/*page-restaurant*/
+
 @mixin box-plate {
     width: 95%;
-    height: 19%;
+    height: 15%;
     max-width: 450px;
     border-radius: 1em;
-    padding: 0.5em;
-    box-shadow: 3px 3px 10px grey;
-    
+    padding: 0 0.5em 1em;
+    box-shadow: 3px 3px 10px grey;    
 }
