@@ -1,0 +1,37 @@
+/*index-page*/
+
+.research-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 50em;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px grey;
+    margin: 16px 0 16px;
+    transform: scale(1);
+    transition : transform 200ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+
+/*btn-restaurant-page*/
+
+.btn-order{
+    height: 50px;
+    width: 200px;
+    border-radius: 50em;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px grey;
+    transform: scale(1);
+    transition : transform 200ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}

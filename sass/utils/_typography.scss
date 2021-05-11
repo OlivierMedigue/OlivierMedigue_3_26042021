@@ -6,6 +6,10 @@
     font-weight: bolder;
     font-size: 1.8em;
 }
+.text__restaurant{
+    font-weight: bolder;
+    margin-bottom: 0;
+}
 .ingredient_txt{
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
@@ -23,7 +27,7 @@ p {
 .bolder{
     font-weight: bolder;
 }
-.no-marge{
+.no-margin{
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -35,4 +39,10 @@ p {
 }
 .mb{
     margin-bottom: 0;
+}
+
+/*typo-restaurant-page*/
+
+.order__txt{
+    font-weight: bolder;
 }

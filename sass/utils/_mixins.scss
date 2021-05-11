@@ -6,6 +6,17 @@
     padding: 1em 2em;
     box-shadow: 3px 3px 10px grey;
 }
+/*filter-selection*/
+
+@mixin hover-selection {
+    .instruction-txt a{
+        text-decoration: none;
+    }
+    &:hover{
+        color: $color-primary;
+        background-color: $btn-purple;
+    }
+}
 
 /*index-box-restaurant*/
 @mixin box-restaurant {
