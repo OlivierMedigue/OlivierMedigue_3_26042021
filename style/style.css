@@ -34,14 +34,17 @@ header img {
   font-weight: bolder;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 .price {
+  font-family: "Roboto", sans-serif;
   font-weight: bolder;
   margin: 0.5em;
+  font-size: 1.1em;
 }
 
 p {
@@ -56,6 +59,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -87,12 +91,17 @@ p {
 /*index-box-restaurant*/
 /*page-restaurant*/
 footer {
-  display: flex;
-  flex-direction: column;
   padding: 1em;
   background-color: #353535;
-  color: white;
   margin: 0;
+}
+
+.footer-block {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: white;
 }
 
 .icon {
@@ -203,7 +212,7 @@ body {
   width: 100%;
   height: 30em;
   margin: 1em 0 4em;
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -278,6 +287,7 @@ body {
 }
 .describe__heart:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -392,17 +402,29 @@ body {
   position: relative;
 }
 .menu .menu__title {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 95%;
 }
-.menu .txt-underline {
+.menu .menu-container {
+  max-width: 900px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu .title-block {
+  display: flex;
+  flex-direction: column;
+}
+.menu .title-block .txt-underline {
   border-top: 3px solid #99E2D0;
   width: 41px;
   position: relative;
-  bottom: 1.4em;
 }
 .menu .appetizer {
   width: 95%;
@@ -435,7 +457,7 @@ body {
   margin-bottom: 2em;
 }
 .menu .recipe {
-  width: 95%;
+  width: 100%;
   height: 19%;
   max-width: 450px;
   border-radius: 1em;
@@ -449,9 +471,11 @@ body {
 }
 .menu .recipe .recipe__ingredient {
   margin: 0.5em;
-  width: 80%;
+  width: 85%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .recipe .price {
   transition: transform 1s ease-in-out;

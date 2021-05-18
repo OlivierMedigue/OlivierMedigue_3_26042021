@@ -1,10 +1,14 @@
 footer{
+    padding: 1em;
+    background-color: #353535;    
+    margin: 0;
+}
+.footer-block{
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    padding: 1em;
-    background-color: #353535;
+    margin: auto;
     color: white;
-    margin: 0;
 }
 .icon{
     width: 30px;
