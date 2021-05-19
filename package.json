@@ -4,7 +4,7 @@
   "description": "Découvrez des restaurants d'exception sélectionnés par nos soins",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style/style.css"
+    "sass": "sass --watch ./sass/main.scss:./style/style.css ./sass/menu.scss:./style/style2.css"
   },
   "repository": {
     "type": "git",
