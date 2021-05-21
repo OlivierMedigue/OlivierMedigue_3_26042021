@@ -5,6 +5,9 @@
     border-radius: 1em;
     padding: 1em 2em;
     box-shadow: 3px 3px 10px grey;
+    @media (min-width: 900px) {
+        width: 205px;
+    }
 }
 /*filter-selection*/
 
@@ -21,7 +24,7 @@
 /*index-box-restaurant*/
 @mixin box-restaurant {
     width: 100%;
-    max-width: 600px;
+    max-width: 670px;
     height: 22%;
     border-radius: 1em;
     box-shadow :6px 6px 10px #d9d9d9;
@@ -52,8 +55,8 @@
 }
 @mixin box-recipe {
     width: 100%;
+    max-width: 750px;
     height: 19%;
-    max-width: 450px;
     border-radius: 1em;
     box-shadow: 3px 3px 10px grey; 
     display: flex;

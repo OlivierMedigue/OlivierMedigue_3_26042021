@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 @import 'layout/header';
 @import 'utils/typography';
+@import 'layout/loader';
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'layout/footer';
@@ -10,9 +11,7 @@
 body{
     margin: 0;
 }
-/* spinner*/
-
-
+/* loader*/
 
 .research{
     width: 100%;
@@ -58,11 +57,15 @@ body{
 }
 
 .instructions{
-    width: 100%;
+    width: 95%;
     height: 30em;
-    margin: 1em 0 4em;
     max-width: 900px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 900px) {
+        height: 20em;
+    }
 }
 .selection{
     display: flex;
@@ -70,6 +73,9 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     height: 90%;
+    @media (min-width: 900px) {
+        height: 60%;        
+    }
 }
 .choose{
     display: flex;
@@ -77,6 +83,10 @@ body{
     align-items: center;
     width: 360px;
     margin-right: 1em;
+    @media (min-width: 900px) {
+        width: 300px;
+        margin-right: 0;
+    }
 }
 .instruction-txt{
     display: flex;
@@ -92,6 +102,10 @@ body{
     align-items: center;
     width: 360px;
     margin-right: 1em;
+    @media (min-width: 900px) {
+        width: 300px;
+        margin-right: 0;
+    }
 }
 .store{
     display: flex;
@@ -99,6 +113,10 @@ body{
     align-items: center;
     width: 360px;
     margin-right: 1em;
+    @media (min-width: 900px) {
+        width: 300px;
+        margin-right: 0;
+    }
 }
 .nbr{
     background-color: $color-primary;
@@ -136,15 +154,17 @@ body{
 .restaurants{
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 95%;
+    margin: auto;
     height: 67em;
     background-color: $bck-color;
-    padding: 0 1em 5em;
+    padding-bottom: 5em;
 }
 .full-box{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;    

@@ -6,6 +6,9 @@
 @import 'layout/footer';
 @import 'components/button';
 
+body{
+    margin: 0;
+}
 .arrow{
     position: relative;
     right: 50px;
@@ -38,7 +41,10 @@
         align-items: center;
         padding: 0 0 4em 0;
         border-radius: 3em 3em 0 0;
-        position: relative
+        position: relative;
+        @media (min-width: 900px) {
+            height: 70em;
+        }        
     }
     .menu__title{
         display: flex;
@@ -63,21 +69,53 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        @media (min-width: 900px) {
+            width: 100%;
+        }
     }     
     .appetizer{
         @include box;
+        @media (min-width: 900px) {
+            max-width: 900px;
+            width: 100%;
+            height: 30%;
+            flex-direction: row;
+            align-items: initial;
+            align-content: initial;                
+        }
     }
     .plates{
         @include box;        
         margin-top: 1em;
+        @media (min-width: 900px) {
+            max-width: 900px;
+            width: 100%;
+            height: 30%;
+            flex-direction: row;
+            align-items: initial;
+            align-content: initial;                
+        }
     }
     .dessert{
         @include box;
         margin-top: 1em;
         margin-bottom: 2em;
+        @media (min-width: 900px) {
+            max-width: 900px;
+            width: 100%;
+            height: 30%;
+            flex-direction: row;
+            align-items: initial;
+            align-content: initial;           
+        }
     }
     .recipe{
         @include box-recipe;
+        @media (min-width: 900px) {
+            height: 32%;
+            max-width: 400px;
+            align-items: center;
+        }   
         .recipe__ingredient{
             margin: 0.5em;
             width: 85%;
@@ -114,5 +152,4 @@
         }
     }
 }
-
-@import './layout/desktop-menu.scss';
+@import "./layout/desktop-menu";
