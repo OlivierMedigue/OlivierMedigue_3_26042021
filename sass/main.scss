@@ -38,6 +38,7 @@ body{
     border: none;
     width: 150px;
     text-align: center;
+    outline: none;
 }
 .btn{
     width: 100%;
@@ -78,11 +79,21 @@ body{
     }
 }
 .choose{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 360px;
-    margin-right: 1em;
+    @include instruction-box;
+    @media (min-width: 900px) {
+        width: 300px;
+        margin-right: 0;
+    }
+}
+.compose{
+    @include instruction-box;
+    @media (min-width: 900px) {
+        width: 300px;
+        margin-right: 0;
+    }
+}
+.store{
+    @include instruction-box;
     @media (min-width: 900px) {
         width: 300px;
         margin-right: 0;
@@ -96,28 +107,6 @@ body{
     @include instruction;
     @include hover-selection;
 }
-.compose{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 360px;
-    margin-right: 1em;
-    @media (min-width: 900px) {
-        width: 300px;
-        margin-right: 0;
-    }
-}
-.store{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 360px;
-    margin-right: 1em;
-    @media (min-width: 900px) {
-        width: 300px;
-        margin-right: 0;
-    }
-}
 .nbr{
     background-color: $color-primary;
     border-radius: 100%;
@@ -130,24 +119,6 @@ body{
     position: relative;
     left: 1em;
 }
-.describe__heart{
-    font-size: 1.5em;
-    .heart-full{
-        display: none;
-    }
-    &:hover{
-        .heart-empty{
-            display: none;
-        }
-        .heart-full{
-            display: initial;            
-        }
-        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-        background-clip: text;
-	    -webkit-background-clip: text;
-	    -webkit-text-fill-color: transparent;
-    }
-}
 .no-hov{
     color: black;
 }
@@ -155,10 +126,13 @@ body{
     display: flex;
     flex-direction: column;
     width: 95%;
+    max-width: 900px;
     margin: auto;
     height: 67em;
-    background-color: $bck-color;
     padding-bottom: 5em;
+    @media (min-width: 900px) {
+        height: 41em;
+    }
 }
 .full-box{
     display: flex;
@@ -167,12 +141,19 @@ body{
     align-content: center;
     flex-wrap: wrap;
     height: 100%;
-    width: 100%;    
+    width: 100%; 
+    @media (min-width: 900px) {
+        flex-direction: row;
+        align-content: space-evenly;        
+    }   
 }
 .box{
     position: relative;
     @include box-restaurant;
     cursor: pointer;
+    @media (min-width: 900px) {
+        @include box-restaurant-dsk;
+    }
 }
 .describe{
     display: flex;
@@ -188,6 +169,9 @@ body{
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     object-fit: cover;   
+    @media (min-width: 900px) {
+        height: 11em;        
+    }
 }
 .new{
     position: absolute;
