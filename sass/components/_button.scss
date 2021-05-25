@@ -8,15 +8,15 @@
     color: white;
     border: none;
     cursor: pointer;
-    box-shadow: 6px 6px 10px grey;
+    box-shadow: 2px 2px 10px grey;
     margin: 16px 0 16px;
     transform: scale(1);
     transition : transform 200ms;
     &:hover {
         transform: scale(1.15);
+        box-shadow: 6px 6px 10px grey;
     }
 }
-
 
 /*btn-restaurant-page*/
 
@@ -28,10 +28,11 @@
     color: white;
     border: none;
     cursor: pointer;
-    box-shadow: 6px 6px 10px grey;
+    box-shadow: 2px 2px 10px grey;
     transform: scale(1);
     transition : transform 200ms;
     &:hover {
         transform: scale(1.15);
+        box-shadow: 6px 6px 10px grey;
     }
 }

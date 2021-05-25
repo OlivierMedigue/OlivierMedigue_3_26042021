@@ -98,6 +98,45 @@ p {
 /*filter-selection*/
 /*index-box-restaurant*/
 /*page-restaurant*/
+/*heart-display*/
+.describe__heart {
+  font-size: 1.5em;
+}
+.describe__heart .heart-full {
+  display: none;
+}
+.describe__heart:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.describe__heart:hover .heart-empty {
+  display: none;
+}
+.describe__heart:hover .heart-full {
+  display: initial;
+}
+
+.describe__heart__menu {
+  font-size: 1.5em;
+}
+.describe__heart__menu .heart-full {
+  display: none;
+}
+.describe__heart__menu:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.describe__heart__menu:hover .heart-empty {
+  display: none;
+}
+.describe__heart__menu:hover .heart-full {
+  display: initial;
+}
+
 footer {
   padding: 1em;
   background-color: #353535;
@@ -155,13 +194,14 @@ footer {
   color: white;
   border: none;
   cursor: pointer;
-  box-shadow: 6px 6px 10px grey;
+  box-shadow: 2px 2px 10px grey;
   margin: 16px 0 16px;
   transform: scale(1);
   transition: transform 200ms;
 }
 .research-btn:hover {
   transform: scale(1.15);
+  box-shadow: 6px 6px 10px grey;
 }
 
 /*btn-restaurant-page*/
@@ -173,12 +213,13 @@ footer {
   color: white;
   border: none;
   cursor: pointer;
-  box-shadow: 6px 6px 10px grey;
+  box-shadow: 2px 2px 10px grey;
   transform: scale(1);
   transition: transform 200ms;
 }
 .btn-order:hover {
   transform: scale(1.15);
+  box-shadow: 6px 6px 10px grey;
 }
 
 body {
@@ -189,10 +230,6 @@ body {
   position: relative;
   right: 50px;
   font-size: 1.2em;
-}
-
-.heart {
-  font-size: 1.6em;
 }
 
 .icon__validate {
@@ -331,7 +368,7 @@ body {
   }
 }
 .menu .recipe {
-  width: 100%;
+  width: 340px;
   max-width: 750px;
   height: 19%;
   border-radius: 1em;
@@ -342,6 +379,11 @@ body {
   justify-content: space-between;
   background-color: #F6F6F6;
   overflow: hidden;
+}
+@media (min-width: 420px) {
+  .menu .recipe {
+    width: 100%;
+  }
 }
 @media (min-width: 900px) {
   .menu .recipe {
@@ -357,9 +399,6 @@ body {
   flex-direction: column;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.menu .recipe .price {
-  transition: transform 1s ease-in-out;
 }
 .menu .recipe .recipe__validate {
   width: 0;

@@ -9,6 +9,13 @@
         width: 205px;
     }
 }
+@mixin instruction-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 360px;
+    margin-right: 1em;
+}
 /*filter-selection*/
 
 @mixin hover-selection {
@@ -26,6 +33,13 @@
     width: 100%;
     max-width: 670px;
     height: 22%;
+    border-radius: 1em;
+    box-shadow :6px 6px 10px #d9d9d9;
+    background-color: white;
+}
+@mixin box-restaurant-dsk {
+    max-width: 410px;
+    height: 42%;
     border-radius: 1em;
     box-shadow :6px 6px 10px #d9d9d9;
     background-color: white;
@@ -54,7 +68,7 @@
     align-items: center;    
 }
 @mixin box-recipe {
-    width: 100%;
+    width: 340px;
     max-width: 750px;
     height: 19%;
     border-radius: 1em;
@@ -64,7 +78,10 @@
     align-items: flex-end;
     justify-content: space-between;
     background-color: $bck-color;
-    overflow: hidden;   
+    overflow: hidden;
+    @media (min-width: 420px) {
+        width: 100%;        
+    }  
 }
 @mixin box-validate {
     width: 0;
@@ -75,4 +92,42 @@
     color: white;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
+}
+/*heart-display*/
+
+.describe__heart{
+    font-size: 1.5em;
+    .heart-full{
+        display: none;
+    }
+    &:hover{
+        .heart-empty{
+            display: none;
+        }
+        .heart-full{
+            display: initial;            
+        }
+        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+        background-clip: text;
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+}
+.describe__heart__menu{
+    font-size: 1.5em;
+    .heart-full{
+        display: none;
+    }
+    &:hover{
+        .heart-empty{
+            display: none;
+        }
+        .heart-full{
+            display: initial;            
+        }
+        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+        background-clip: text;
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
 }

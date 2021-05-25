@@ -14,9 +14,6 @@ body{
     right: 50px;
     font-size: 1.2em;
 }
-.heart{
-    font-size: 1.6em;
-}
 .icon__validate{
     font-size: 1.6em;
 }
@@ -124,9 +121,6 @@ body{
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .price{
-            transition: transform 1s ease-in-out;
-        }
         .recipe__validate{
             @include box-validate;
             background-color: $color-tertiary;
@@ -147,8 +141,7 @@ body{
             .icon__validate{
                 transform: rotate(0deg);
                 opacity: 1;
-            }
-                 
+            }                 
         }
     }
 }
