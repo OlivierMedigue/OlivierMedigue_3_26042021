@@ -1,0 +1,66 @@
+$num-recipe : 10;
+$anim-dur : 400ms;
+$anim-delay : $anim-dur / $num-recipe;
+
+@keyframes anim_menu {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+      z-index: 1;
+    }
+}
+@-webkit-keyframes anim_menu{
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(60px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+    }
+}
+.recipe {
+    -webkit-animation: anim_menu $anim-dur 1 ease-out;
+    animation: anim_menu $anim-dur 1 ease-out;
+    animation-fill-mode: both;
+    opacity: 0;
+    @for $i from 1 through $num-recipe {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
+}  
+.recipe--1{
+  animation-delay: 50ms ;
+}
+.recipe--2{
+  animation-delay: 200ms;
+}
+.recipe--3{
+  animation-delay: 350ms;
+}
+.recipe--4{
+  animation-delay: 500ms;
+}
+.recipe--5{
+  animation-delay: 650ms;
+}
+.recipe--6{
+  animation-delay: 800ms;
+}
+.recipe--7{
+  animation-delay: 950ms;
+}
+.recipe--8{
+  animation-delay: 1100ms;
+}
+.recipe--9{
+  animation-delay: 1250ms;
+}
+.recipe--10{
+  animation-delay: 1400ms;
+}

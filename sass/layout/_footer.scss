@@ -4,7 +4,8 @@ footer{
     margin: 0;
 }
 .footer-block{
-    max-width: 900px;
+    width: 95%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -12,7 +13,6 @@ footer{
     @media (min-width: 900px) {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
         justify-content: space-between;
     }
 }
@@ -28,13 +28,10 @@ footer{
 .icon{
     width: 30px;
 }   
-.propose-restaurant{
-    display: inline-flex;
+.propose-restaurant, .become-partner{
+    display: flex;
     flex-direction: row;
-    align-items: center;
 }
-.become-partner{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
+.mailto:hover {
+    text-decoration: underline;
 }
