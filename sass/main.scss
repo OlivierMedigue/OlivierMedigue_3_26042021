@@ -47,7 +47,7 @@ body{
     padding-bottom: 2em;
 }
 .btn-search{
-    width: 80%;
+    width: 95%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,6 @@ body{
     text-align: center;
     margin: auto;
 }
-
 .instructions{
     width: 95%;
     height: 30em;
@@ -136,13 +135,7 @@ body{
     }
 }
 .full-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 95%;
-    width: 100%; 
+    @include full-box-container;
     @media (min-width: 900px) {
         flex-direction: row;
         align-content: space-evenly;        

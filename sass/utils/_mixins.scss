@@ -39,6 +39,15 @@
 }
 
 /*index-box-restaurant*/
+@mixin full-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 95%;
+    width: 100%; 
+}
 @mixin box-restaurant {
     width: 100%;
     max-width: 670px;
